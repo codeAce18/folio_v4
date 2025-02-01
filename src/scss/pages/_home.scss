@@ -581,6 +581,10 @@
       padding-top: 4.8rem;
       padding-bottom: 7.2rem;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
 
       @include media("<=phone") {
         max-width: 255px;
@@ -679,7 +683,7 @@
       .time {
         position: relative;
         display: flex;
-
+        gap: 5px;
         @include media("<=tablet") {
           margin-bottom: 2.4rem;
         }
@@ -698,6 +702,15 @@
 
     &__center {
       .footer__links {
+        margin: 0 auto;
+        @include media("<=phone") {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          justify-content: center;
+          align-items: center;
+        }
+
         @include media(">tablet") {
           display: flex;
         }
