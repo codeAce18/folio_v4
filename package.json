@@ -6,8 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite src --port 3000",
-    "build": "vite build src",
-    "preview": "vite preview"
+    "build": "vite build src"
   },
   "keywords": [],
   "author": "",
